@@ -33,7 +33,7 @@ This configuration is used for setting up a full magento 2 local development.
 mkdir project-name && cd project-name
 
 # Change .composer permission
-sudo chown -R $USER:$USER ~/.composer
+mkdir ~/.composer && sudo chown -R $USER:$USER ~/.composer
 
 # Download the Docker Compose template:
 curl -s https://raw.githubusercontent.com/bid-d/docker-magento/master/lib/template | bash
